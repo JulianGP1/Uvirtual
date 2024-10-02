@@ -17,34 +17,62 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+
+		<div id="page">
+			<div id="head" class="fixed shadow-sm flex h-16 w-screen bg-red-600 items-center" class="p-6 bg-white" style="box-shadow: 0 4px 6px rgba(15, 8, 8, 0.5);">
+				<svg id="phone" xmlns="http://www.w3.org/2000/svg" class="text-white ml-7 h-[30px] w-[30px]" viewBox="0 0 24 24">
+					<path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z" />
+				</svg>
+				<h2 class="text-white font-bold">Teléfono: 5690088 Ext 413</h2>
+				<svg id="ocrreo" xmlns="http://www.w3.org/2000/svg" class="text-white ml-4 h-[30px] w-[30px]"  viewBox="0 0 24 24">
+				<path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z" />
+			</svg>
+			<h1 class="text-white font-bold">Correo electrónico: uvirtual.ufpso.edu.co</h1>
+			<svg id="campana" xmlns="http://www.w3.org/2000/svg" class="text-white ml-auto h-[30px] w-[30px]" viewBox="0 0 24 24">
+				<path fill="currentColor" d="M10 21h4c0 1.1-.9 2-2 2s-2-.9-2-2m11-2v1H3v-1l2-2v-6c0-3.1 2-5.8 5-6.7V4c0-1.1.9-2 2-2s2 .9 2 2v.3c3 .9 5 3.6 5 6.7v6zm-4-8c0-2.8-2.2-5-5-5s-5 2.2-5 5v7h10z" />
+			</svg>
+			<svg id="camversacion" xmlns="http://www.w3.org/2000/svg" class="text-white ml-4 h-[30px] w-[30px]" viewBox="0 0 24 24">
+				<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.464 16.828C2 15.657 2 14.771 2 11s0-5.657 1.464-6.828C4.93 3 7.286 3 12 3s7.071 0 8.535 1.172S22 7.229 22 11s0 4.657-1.465 5.828C19.072 18 16.714 18 12 18c-2.51 0-3.8 1.738-6 3v-3.212c-1.094-.163-1.899-.45-2.536-.96" />
+			</svg>
+			<svg id="user" xmlns="http://www.w3.org/2000/svg" class="text-white ml-4 mr-4 h-[30px] w-[30px]" viewBox="0 0 256 256">
+				<path fill="currentColor" d="M230.92 212c-15.23-26.33-38.7-45.21-66.09-54.16a72 72 0 1 0-73.66 0c-27.39 8.94-50.86 27.82-66.09 54.16a8 8 0 1 0 13.85 8c18.84-32.56 52.14-52 89.07-52s70.23 19.44 89.07 52a8 8 0 1 0 13.85-8M72 96a56 56 0 1 1 56 56a56.06 56.06 0 0 1-56-56" />
+			</svg>
+			</div>
+			<div id="content" class="pt-16 bg-white w-screen h-screen border-spacing-3 border-b">
+				<div class="border-b-4 border boder border-grey">
+
+				
+				<div id="sup" class="flex ml-17 items-center ">
+					<img src="/img2.png" alt="">
+					<img class="h-24 w-40 ml-4 border-spacing-2 border-l-2" src="/img.png" alt=" imagen	">
+					<a href="#" class="ml-auto text-[18px]  mr-4">Pagina Principal</a>
+					<a href="#" class=" text-[18px]  mr-4">Área Principal</a>
+					<a href="#" class=" text-[18px]  mr-4">Mis cursos</a>
+					<a href="#" class=" text-[18px]  mr-4">Información</a>
+				</div>
+		    </div>
+			<div id="contenido" class="mt-4 ml-4 mr-4 ">
+				<div class="bg-gray-300 h-auto w-auto max-w-80">
+					<a href="Pregrado">Pregrado</a>
+				</div>
+				<div class="bg-gray-300 mt-2 ml-3 mr-6 rounded-md">
+					<h1 class="ml-3">Para fines de reforzamiento de habilidades, les comparto un vídeo donde podrán practicar el uso de la librería tailwind.
+					</h1>
+					<h1 class="ml-3 mt-4 font-bold">Instrucciones</h1>
+					<h1 class="ml-6">
+						1.Instalen y configuren AstroJS tal como lo indica la documentación oficial.
+					</h1>
+					<h1 class="ml-6">
+						2.Añadan la integración de TailwindCSS al proyecto de Astro.
+					</h1>
+					<h1 class="ml-6">
+						3.Tomen como guía el vídeo compartido para crear el clon de una página.
+					</h1>
+					<h1 class="ml-6 mt-4 font-bold" >Video guia</h1>
+					<a class="ml-6" href="https://www.youtube.com/watch?embed=no&v=873c5RiAUVQ">https://www.youtube.com/watch?embed=no&v=873c5RiAUVQ</a>
+				</div>
+			</div>
+			</div>
+		</div>
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
